@@ -1,4 +1,8 @@
 <p>
+For durect message, set Custom Field for users with name "Slack name" (without quotes) and set first char as @
+</p>
+
+<p>
 	<label for="settings_slack_url">Slack URL</label>
 	<input type="text" id="settings_slack_url" size=80 value="<%= settings['slack_url'] %>" name="settings[slack_url]" />
 </p>
@@ -38,6 +42,11 @@
 <p>
 	<label for="settings_post_updates">Post Issue Updates?</label>
 	<input type="checkbox" id="settings_post_updates" value="1" name="settings[post_updates]" <%= settings['post_updates'] == '1' ? 'checked="checked"' : '' %> />
+</p>
+
+<p>
+        <label for="settings_post_closed">Post Issue Closed?</label>
+        <input type="checkbox" id="settings_post_closed" value="1" name="settings[post_closed]" <%= settings['post_closed'] == '1' ? 'checked="checked"' : '' %> />
 </p>
 
 <p>
