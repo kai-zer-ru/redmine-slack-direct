@@ -12,13 +12,16 @@ channel. Improvements are welcome! Just send a pull request.
 From your Redmine plugins directory, clone this repository as `redmine_slack` (note
 the underscore!):
 
-    git clone https://github.com/sciyoshi/redmine-slack.git redmine_slack
+	cd plugins
+    git clone https://github.com/kaizer666/redmine-slack-direct.git redmine_slack
 
 You will also need the `httpclient` dependency, which can be installed by running
 
     bundle install
 
 from the plugin directory.
+
+Create custom field for users with name "Slack name".
 
 Restart Redmine, and you should see the plugin show up in the Plugins page.
 Under the configuration options, set the Slack API URL to the URL for an
